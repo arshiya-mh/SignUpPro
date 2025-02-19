@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+body{
+    min-height: 100vh;
+    background-color: #4070f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@font-face {
+    font-family: 'cf';
+    src: url('cfnotchedemoregular-6rywg.otf') format('truetype');
+}
+@font-face {
+    font-family: 'jag';
+    src: url('JAGUAR.ttf') format('truetype');
+}
+.countainer{
+    background-color: #fff;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    margin: 0px 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}   
+.countainer h1{
+    font-family: 'cf';
+    font-size: 25px;
+    position: relative;
+    font-weight: 600;
+    color: #333;
+}
+.countainer h1::before{
+    content: '';
+    height: 3px;
+    width: 29px;
+    position: absolute;
+    bottom: -5px;
+    border-radius: 8px;
+    background-color: #4070f4;
+    left: 0;
+}
+.countainer form{
+    position: relative;
+    margin-top: 12px;
+    min-height: 500px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.countainer form .details{
+    margin-top: 30px;
+}
+.countainer form .title{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #4070f4;
+    font-family: 'jag';
+}
+.countainer form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+form .fields .input-fields{
+    display: flex;
+    width: calc( 100 / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-fields label{
+    font-size: 15px;
+    font-weight: 500;
+    color: #2e2e2e;
+    font-family: 'jag';
+
+}
+.input-fields input{
+    height: 32px;
+    width: 200px;
+    outline: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    margin: 8px 0;
+}
+.input-fields input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0,  .13);
+}
+.countainer form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    background-color: #4070f4;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    margin: 24px 0;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: #265df2;
+}
+form button i{
+    margin-left: 10px;
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button{
+    margin-right: 12px;
+}
+.backbt {
+    margin-right: 20px;
+}
+.countainer form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 1s ease;
+
+}
+.countainer form .form.second{
+    opacity: 0;
+    pointer-events: none;
+}
+form.seactive .form.form.second{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0%);
+}
+form.seactive .form.form.first{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+/* msg style : */
+
+#toastbox{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+}
+.toast{
+    width: 200px;
+    height: 80px;
+    background-color: #fff;
+    font-weight: 500;
+    margin: 15px 0;
+    transform: translateX(100%);
+    animation: moveleft .5s linear forwards;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+@keyframes moveleft {
+    100%{
+        transform: translateX(0);
+    }
+}
+.toast i{
+    margin: 5px;
+    color: #4070f4 ;
+}
+.toast.error i {
+    color: #4070f4 ;
+}
+.toast.invaild i {
+    color: #4070f4 ;
+}
+.toast::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: #4070f4;
+    animation: anim 5s linear forwards;
+}
+@keyframes anim{
+    100%{
+        width: 0;
+
+    }
+}
+.toast.error::after{
+    background: #4070f4;
+}
+.toast.invaild::after{
+    background: #4070f4;
+}

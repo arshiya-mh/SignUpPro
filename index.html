@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/837494d1db.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registering </title>
+</head>
+<body>
+    <div class="countainer">
+        <h1> Regisration </h1>
+    
+        <form action="#">
+            <div class="form first">
+                <div class="details">
+                    <span class="title"> Personal Details</span>
+    
+                <div class="fields">
+                    <div class="input-fields">
+                        <label for="">Full Name</label>
+                        <input type="text" name="" id="" placeholder="Enter your name ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Date of Birth</label>
+                        <input type="date" name="" id="" placeholder="Enter your birthday ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Email</label>
+                        <input type="email" name="" id="" placeholder="Enter your email  ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Mobile Number</label>
+                        <input type="number" name="" id="" placeholder="Enter Mobile Number">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Gender</label>
+                        <input type="text" name="" id="" placeholder="Enter your Gender ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Occupation</label>
+                        <input type="email" name="" id="" placeholder="Enter your Occupation  ">
+                    </div>
+
+                </div>
+                </div>
+                <div class="details">
+                    <span class="title"> Identity Details</span>
+    
+                <div class="fields">
+                    <div class="input-fields">
+                        <label for="">ID type</label>
+                        <input type="text" name="" id="" placeholder="Enter ID type ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">ID Number</label>
+                        <input type="number" name="" id="" placeholder="Enter your ID Number">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Issued Date</label>
+                        <input type="date" name="" id="" placeholder="Enter Issued Date  ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Issued State</label>
+                        <input type="number" name="" id="" placeholder="Enter  Issued State">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Expiry Date</label>
+                        <input type="date" name="" id="" placeholder="Enter Expiry Date ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Issued Authority</label>
+                        <input type="text" name="" id="" placeholder="Enter Issued Authority  ">
+                    </div>
+                </div>
+                <button class="nextbt" onclick="showtoast(invaildmsg)">
+                    <span class="btntxt"> Next </span>
+                    <i class="fa-solid fa-angles-right"></i>
+                </button>
+                </div>
+            </div>
+
+
+            <div class="form second">
+                <div class="details">
+                    <span class="title">Address Details</span>
+    
+                <div class="fields">
+                    <div class="input-fields">
+                        <label for="">Address type </label>
+                        <input type="text" name="" id="" placeholder="Enter your Address type ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Nationality</label>
+                        <input type="text" name="" id="" placeholder="Enter your Nationality ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">State</label>
+                        <input type="text" name="" id="" placeholder="Enter your State  ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">District </label>
+                        <input type="text" name="" id="" placeholder="Enter Mobile District">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Block Number</label>
+                        <input type="number" name="" id="" placeholder="Enter your Block Number ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Ward Number</label>
+                        <input type="number" name="" id="" placeholder="Enter your Ward Number  ">
+                    </div>
+
+                </div>
+                </div>
+                <div class="details family">
+                    <span class="title"> Family Details</span>
+    
+                <div class="fields">
+                    <div class="input-fields">
+                        <label for="">Father name</label>
+                        <input type="text" name="" id="" placeholder="Enter  your Fathers name ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Mother Name</label>
+                        <input type="text" name="" id="" placeholder="Enter your Mothers Name">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Fathers job </label>
+                        <input type="text" name="" id="" placeholder="Enter Fathers job  ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Mothers job</label>
+                        <input type="text" name="" id="" placeholder="Enter Mothers job">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Father in law</label>
+                        <input type="text" name="" id="" placeholder="Enter father in law ">
+                    </div>
+                    <div class="input-fields">
+                        <label for="">Mother in law</label>
+                        <input type="text" name="" id="" placeholder="Enter Mother in law  ">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="backbt" onclick="showtoast(errormsg)">
+                        <i class="fa-solid fa-angles-left"></i>
+                        <span class="btntxt"> Back </span>
+                    </button>
+                    <button class="nextbt" onclick="showtoast(successmsg)">
+                    <span class="btntxt"> submite </span>
+                    <i class="fa-solid fa-check"></i>
+                </button>
+                </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="toastbox"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
